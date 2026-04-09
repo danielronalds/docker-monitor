@@ -3,10 +3,10 @@
 # dependencies = ["matplotlib"]
 # ///
 
+import argparse
 import csv
 import re
 import subprocess
-import sys
 import threading
 import time
 from pathlib import Path
@@ -85,7 +85,17 @@ def read_csv():
 
 
 def main():
-    container = sys.argv[1] if len(sys.argv) > 1 else "pluto"
+    parser = argparse.ArgumentParser(
+        description="Live-stream Docker container stats to a matplotlib chart.",
+    )
+    parser.add_argument("container", nargs="?", help="name or ID of the Docker container to monitor")
+    args = parser.parse_args()
+
+    if not args.container:
+        parser.print_help()
+        raise SystemExit(1)
+
+    container = args.container
 
     collector = threading.Thread(target=collect_stats, args=(container,), daemon=True)
     collector.start()
