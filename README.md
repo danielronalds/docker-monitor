@@ -7,20 +7,20 @@ Live Docker container resource monitoring with matplotlib.
 Copy and run the following command to get it running locally (assuming you have `uv` installed)
 
 ```sh
-uv run https://raw.githubusercontent.com/danielronalds/docker-benchmark/main/benchmark.py <container>
+uv run https://raw.githubusercontent.com/danielronalds/docker-benchmark/main/docker-benchmark.py <container>
 ```
 
 ## Usage
 
 ```sh
 # Run locally
-uv run benchmark.py <container>
+uv run docker-benchmark.py <container>
 
 # Run directly from GitHub
-uv run https://raw.githubusercontent.com/danielronalds/docker-benchmark/main/benchmark.py <container>
+uv run https://raw.githubusercontent.com/danielronalds/docker-benchmark/main/docker-benchmark.py <container>
 
 # Show help
-uv run benchmark.py --help
+uv run docker-benchmark.py --help
 ```
 
 Outputs a live-updating chart with memory (MiB) and CPU (%) over time. Stats are also written to `stats.csv`.
