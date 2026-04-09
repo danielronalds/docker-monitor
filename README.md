@@ -11,7 +11,7 @@ Live Docker container resource monitoring with matplotlib.
 Copy and run the following command to get it running locally (assuming you have `uv` installed)
 
 ```sh
-uv run https://raw.githubusercontent.com/danielronalds/docker-monitor/main/docker-monitor.py <container>
+uv run https://danielronalds.github.io/docker-monitor/docker-monitor.py <container>
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ uv run https://raw.githubusercontent.com/danielronalds/docker-monitor/main/docke
 uv run docker-monitor.py <container>
 
 # Run directly from GitHub
-uv run https://raw.githubusercontent.com/danielronalds/docker-monitor/main/docker-monitor.py <container>
+uv run https://danielronalds.github.io/docker-monitor/docker-monitor.py <container>
 
 # Show only specific stats
 uv run docker-monitor.py <container> --cpu --memory
