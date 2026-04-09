@@ -91,7 +91,7 @@ def main():
     collector.start()
 
     fig, (ax_mem, ax_cpu) = plt.subplots(2, 1, sharex=True, figsize=(10, 6))
-    fig.suptitle(f"Docker stats: {container}")
+    fig.canvas.manager.set_window_title(f"{container} - Stats")
 
     def update(_frame):
         elapsed, mem, cpu = read_csv()
@@ -111,6 +111,7 @@ def main():
 
     _anim = animation.FuncAnimation(fig, update, interval=INTERVAL_SECONDS * 1000, cache_frame_data=False)
     plt.tight_layout()
+    plt.subplots_adjust(left=0.1, bottom=0.1)
     plt.show()
 
 
