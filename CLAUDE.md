@@ -4,7 +4,7 @@ Single-file Python script that live-streams Docker container stats (memory and C
 
 ## Constraints
 
-- Must remain a single file, runnable via `uv run docker-benchmark.py` or `uv run <url>`
+- Must remain a single file, runnable via `uv run docker-monitor.py` or `uv run <url>`
 - Dependencies declared via PEP 723 inline script metadata
 - No external config files
 
