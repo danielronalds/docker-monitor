@@ -1,8 +1,10 @@
+<p align="center">
+  <img src=".github/readme_demo.png" alt="Demo screenshot" width="600">
+</p>
+
 # docker-benchmark
 
 Live Docker container resource monitoring with matplotlib.
-
-<img src=".github/readme_demo.png" alt="Demo screenshot" width="600">
 
 ## Getting Started
 
