@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/readme_demo.png" alt="Demo screenshot" width="600">
+  <img src="assets/readme_demo.png" alt="Demo screenshot" width="600">
 </p>
 
 # docker-monitor
